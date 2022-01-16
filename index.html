@@ -27,32 +27,35 @@
   <!-- Add your site or application content here -->
   <header>  
     <div class="top">
-      <a href="index.html"><img src="img/unpluggedlogo.png" alt="unplugged logo"></a>
-      <nav>
-        <ul>
-            <li><a href="faq/index.html" target="_blank">FAQ</a></li>
-            <li><a href="about/index.html" target="_blank">About</a></li>
-        </ul>
-      </nav>      
+      <div id=wrapper>
+        <a href="index.html"><img src="img/unpluggedlogo.png" alt="unplugged logo"></a>
+        <nav>
+          <ul>
+              <li><a href="faq/index.html" target="_blank">FAQ</a></li>
+              <li><a href="about/index.html" target="_blank">About</a></li>
+          </ul>
+        </nav>      
+      </div>
+      
     </div>    
-    <h1>Retreat from the desk, return refreshed.</h1>
+    
 
   </header>
+  <h1>Retreat from the desk, return refreshed.</h1>
   <main>
-    <section>
-
+    <section id=sign-up>
+      <div class="wrapper-sign-up">
+        <div class="half-sign-up">
+          <h3>Want to join next retreat?</h3>
+          <p>Find out when we are holding our next retreat and how your company or team can sign up!</p>
+        </div>
+        <div class="half-sign-up">
+          <h3>Find out more</h3>
+          <input type="text" name="name" value="email address">
+          <input type="button" value="Download Itinerary">
+        </div>
+      </div>    
     </section>
-    <div class="sign-up">
-      <div class="half-sign-up">
-        <h3>Want to join next retreat?</h3>
-        <p>Find out when we are holding our next retreat and how your company or team can sign up!</p>
-      </div>
-      <div class="half-sign-up">
-        <h3>Find out more</h3>
-        <input type="text" name="name" value="email address">
-        <input type="button" value="Download Itinerary">
-      </div>
-    </div>
     <aside>
       <section class="features">
         <h2>Have the work week you always dreamed of — without the bad wifi.</h2>
@@ -96,23 +99,22 @@
     </div>
   </main>
   <footer>
-    <div class="half-footer">
-      <h3>Contact</h3>
-      <p>555-555-5555</p>
-      <p>hello@unplugged.com</p>
+    <div id="footer-wrapper">
+      <div class="half-footer">
+        <h3>Contact</h3>
+        <p>555-555-5555</p>
+        <p>hello@unplugged.com</p>
+      </div>
+      <div class="half-footer">
+        <h3>Social</h3>
+        <ul id="social-icons">
+          <li><img src="img/facebook@2x.png" alt="fb-logo"></li>
+          <li><img src="img/twitter@2x.png" alt="twiitter-logo"></li>
+          <li><img src="img/Instagram@2x.png" alt="insta-logo"></li>
+        </ul>
+      </div>
+      <p>Copyright 2019 | Unplugged</p>
     </div>
-    <div class="half-footer">
-      <h3>Social</h3>
-      <ul>
-        <li><img src="img/facebook@2x.png" alt="fb-logo"></li>
-        <li><img src="img/twitter@2x.png" alt="twiitter-logo"></li>
-        <li><img src="img/Instagram@2x.png" alt="insta-logo"></li>
-      </ul>
-    </div>
-    <p>Copyright 2019 | Unplugged</p>
-
-
-
   </footer>
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>

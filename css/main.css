@@ -86,7 +86,37 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   /*header-footer*/
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+#wrapper nav ul {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+#social-icons{
+  min-width: 300px;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+/*main*/
+.content-wrapper{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
 
+}
+
+   
 /* ==========================================================================
    Helper classes
    ========================================================================== */

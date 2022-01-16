@@ -87,6 +87,9 @@ textarea {
    Author's custom styles
    ========================================================================== */
    /*header-footer*/
+body{
+  padding: 5%;
+}
 header,
 footer {
   display: flex;
@@ -101,9 +104,9 @@ footer {
   flex-flow: row wrap;
 }
 #social-icons{
-  min-width: 300px;
+  
   display:flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-flow: row wrap;
 }
@@ -115,6 +118,31 @@ footer {
   flex-flow: row wrap;
 
 }
+/*style*/
+header .top #wrapper a{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .top #wrapper a img{
+  width: 60%;
+}
+footer #footer-wrapper{
+  width:56%;
+}
+main .features .content-wrapper article{
+  text-align: center;
+  width:55%
+}
+.fontawesome-icon img{width:40%;
+}
+#social-icons {
+  
+  list-style-type: none;padding: 0;
+} 
+#bottom{
+text-align: center;}
+
 
    
 /* ==========================================================================

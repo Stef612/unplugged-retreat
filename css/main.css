@@ -86,65 +86,153 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-   /*header-footer*/
-body{
-  padding: 5%;
-}
-header,
-footer {
+.wrapper {
+    width: 90%;
+    margin: 50px 0;
+  }
+header{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
-#wrapper nav ul {
-  display:flex;
-  justify-content: space-around;
+header .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;  
+}
+#divider {
+  width: 100%;
+  height: 1px;
+  background-color: black;  
+}
+header nav{
+  display: flex;
+  justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 100%;
 }
-#social-icons{
-  
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-flow: row wrap;
-}
-/*main*/
-.content-wrapper{
-  display:flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-flow: row wrap;
-
-}
-/*style*/
-header .top #wrapper a{
-  display:flex;
-  justify-content: space-around;
-  align-items: center;
-}
-header .top #wrapper a img{
+header nav ul {
+  display: flex;
+  justify-content: space-between;  
   width: 60%;
+  padding: 0;
 }
-footer #footer-wrapper{
-  width:56%;
+header nav ul li{
+  list-style-type: none;
 }
-main .features .content-wrapper article{
-  text-align: center;
-  width:55%
+.hero {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
 }
-.fontawesome-icon img{width:40%;
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
-#social-icons {
+aside .wrapper{
+  display:flex;
+  flex-flow: row wrap;
+}
+.features{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.features .wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.features .wrapper .features-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width:55%;
+}
+.reviews{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.reviews .wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.reviews .wrapper .review-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.reviews .wrapper .review{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: tomato;
+}
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
   
-  list-style-type: none;padding: 0;
-} 
-#bottom{
-text-align: center;}
+}
+footer .wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  flex-direction: column;
+  
+  
+}
+footer .wrapper .contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  flex-direction: column;
+  
+}
+
+footer .wrapper .social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  flex-direction: column;
+  width: 100%;
+  
+}
+footer .wrapper .social ul{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  
+  padding: 0;
+  
+  
+}
+footer .wrapper .social ul li{
+  list-style-type: none;}
 
 
-   
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -233,9 +321,62 @@ text-align: center;}
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+   @media only screen and (min-width:768px) {
+    .wrapper{max-width: 640px;} 
+    
+    header .wrapper{
+      width:100%;
+      justify-content: space-between;
+    }
+    #divider{
+      display: none;
+    }
+     header .wrapper nav{ 
+      width:30%;
+      justify-content: space-between;
+      }
+    header .wrapper nav ul{
+      justify-content: space-between;
+    }
+    aside .wrapper{justify-content: space-between;}
+    
+    aside .first-part , .second-part{
+      width:40%;
+    }
+    
+    .features .wrapper .features-wrapper{
+      flex-flow: row wrap;
+      justify-content: space-around;
+      width:65%
+    }
+    .features-wrapper article{
+      width :40%;
+      
+    }
+    .reviews .wrapper .review-wrapper {
+      justify-content: space-around;
+      
+    }
+    .reviews .wrapper .review-wrapper img, article{
+      width:49%;
+    }
+    footer .wrapper{
+      flex-direction: row;
+    }
+    #bottom{
+      width:100%;
+      text-align: center; background-color: cyan;
+    }
+    footer .wrapper .contact{
+      width :43%;background-color: darkgray;
+    }
+    footer .wrapper  .social{width :39%;background-color: blue;}
+    footer .wrapper{
+      justify-content: space-around;
+    }
+
+
+  }
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),

@@ -192,12 +192,9 @@ aside .wrapper{
 }
 aside .wrapper .second-part{
   display: flex;
-  
   align-items: center;
   flex-flow: row wrap;
-  
   width: 100%;
-  
 }
 
 .second-part  #text, #button {
@@ -427,14 +424,14 @@ footer .wrapper .social ul li{
     aside .wrapper{
       justify-content: space-between;
     }
+    aside .wrapper .first-part{width:40%;}
+    aside .wrapper .second-part{width:40%}
     header .wrapper nav ul{
       justify-content: space-between;
     }
     
     
-    aside .first-part , .second-part{
-      width:40%;
-    }    
+    
     .features .wrapper .features-wrapper{
       flex-flow: row wrap;
       justify-content: space-around;
@@ -467,6 +464,7 @@ footer .wrapper .social ul li{
     footer .wrapper{
       justify-content: space-around;
     }
+    
   }
   @media only screen and (min-width: 1200px) {
     .wrapper{max-width: 1000px;} 
@@ -480,16 +478,17 @@ footer .wrapper .social ul li{
     }
      header .wrapper nav{ 
       width:30%;
-      justify-content: space-between;
+
+      justify-content: right;
       }
     header .wrapper nav ul{
       justify-content: space-between;
     }
     aside .wrapper{justify-content: space-between;}
     
-    aside .first-part , .second-part{
-      width:40%;
-    }
+    
+    aside .wrapper .first-part{width:37%;margin-left: 80px;}
+    aside .wrapper .second-part{width:37%;margin-right: 80px;}
     
     .features .wrapper .features-wrapper{
       flex-flow: row wrap;

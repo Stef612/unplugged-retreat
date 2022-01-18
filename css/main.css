@@ -374,8 +374,61 @@ footer .wrapper .social ul li{
     footer .wrapper{
       justify-content: space-around;
     }
-
-
+  }
+  @media only screen and (min-width: 1200px) {
+    .wrapper{max-width: 1000px;} 
+    
+    header .wrapper{
+      width:100%;
+      justify-content: space-between;
+    }
+    #divider{
+      display: none;
+    }
+     header .wrapper nav{ 
+      width:30%;
+      justify-content: space-between;
+      }
+    header .wrapper nav ul{
+      justify-content: space-between;
+    }
+    aside .wrapper{justify-content: space-between;}
+    
+    aside .first-part , .second-part{
+      width:40%;
+    }
+    
+    .features .wrapper .features-wrapper{
+      flex-flow: row wrap;
+      justify-content: space-around;
+      width:65%
+    }
+    .features-wrapper article{
+      width :30%;
+      
+    }
+    .reviews .wrapper .review-wrapper {
+      justify-content: space-around;
+      
+    }
+    .reviews .wrapper .review-wrapper img, article{
+      width:49%;
+    }
+    footer .wrapper{
+      flex-direction: row;
+    }
+    #bottom{
+      width:100%;
+      text-align: center; background-color: cyan;
+    }
+    footer .wrapper .contact{
+      width :43%;background-color: darkgray;
+    }
+    footer .wrapper  .social{width :39%;background-color: blue;}
+    footer .wrapper{
+      justify-content: space-around;
+    }
+          
   }
 
 @media print,

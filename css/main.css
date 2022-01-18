@@ -121,6 +121,13 @@ aside{
 .reviews{
   background-color: #2a423a;
 }
+.hero{
+  background: url('../img/jake-melara-30679-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
 
 /*layouts*/
 .wrapper {

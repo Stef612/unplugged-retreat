@@ -86,10 +86,45 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* General Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+h2 {
+  font-family: 'Poppins', sans-serif;
+}
+h3, 
+h4 {
+     font-family: 'Poppins', sans-serif;
+}
+html {
+  font-size: 16px;
+  color: #e2e3ed;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+}
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+header,footer{
+  background-color: #202322;
+  
+}
+aside{
+  background-color: #527158;
+}
+.reviews{
+  background-color: #2a423a;
+}
+
+/*layouts*/
 .wrapper {
-    width: 90%;
-    margin: 50px 0;
-  }
+  width: 90%;
+  margin: 50px 0;
+}
 header{
   display: flex;
   justify-content: center;
@@ -180,7 +215,7 @@ aside .wrapper{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background-color: tomato;
+  
 }
 footer{
   display: flex;
@@ -226,8 +261,8 @@ footer .wrapper .social ul{
   
 }
 footer .wrapper .social ul li{
-  list-style-type: none;}
-
+  list-style-type: none;
+}
 
 
 
@@ -365,12 +400,15 @@ footer .wrapper .social ul li{
     }
     #bottom{
       width:100%;
-      text-align: center; background-color: cyan;
+      text-align: center; 
     }
     footer .wrapper .contact{
-      width :43%;background-color: darkgray;
+      width :43%;
+     
     }
-    footer .wrapper  .social{width :39%;background-color: blue;}
+    footer .wrapper  .social{
+      width :39%;
+    }
     footer .wrapper{
       justify-content: space-around;
     }
@@ -419,12 +457,12 @@ footer .wrapper .social ul li{
     }
     #bottom{
       width:100%;
-      text-align: center; background-color: cyan;
+      text-align: center; ;
     }
     footer .wrapper .contact{
-      width :43%;background-color: darkgray;
+      width :43%;;
     }
-    footer .wrapper  .social{width :39%;background-color: blue;}
+    footer .wrapper  .social{width :39%;}
     footer .wrapper{
       justify-content: space-around;
     }

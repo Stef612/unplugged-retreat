@@ -125,14 +125,19 @@ aside{
   background: url('../img/jake-melara-30679-unsplash.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  
+  background-position:center;
+  min-height: 500px;
 }
-
+.features{
+  background: url('../img/rawpixel-800820-unsplash1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
+}
 /*layouts*/
 .wrapper {
   width: 90%;
-  margin: 0px 0;
+  margin: 20px 0;
 }
 header{
   display: flex;
@@ -145,14 +150,21 @@ header .wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;  
-  
+  margin-bottom: 0;
 }
+#logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap; 
+  margin-bottom: 10px;
+  max-width:385px
+}
+header .wrapper a img{width:70%;}
 #divider {
   width: 100%;
   height: 1px;
   background-color: #3a3a3a;   
-  
-  
 }
 header nav{
   display: flex;
@@ -160,17 +172,13 @@ header nav{
   align-items: center;
   flex-flow: row wrap;
   width: 100%;
-  
-  
-  
-
+  margin: 0;
 }
 header nav ul {
   display: flex;
   justify-content: space-between;  
-  width: 50%;
+  width: 55%;
   padding: 0;
-  
 }
 header nav ul li{
   list-style-type: none;
@@ -213,10 +221,7 @@ aside .wrapper .second-part{
 }
 .second-part input[type="text"]  {
   color: #a2a3a9;
-  
   font-style: italic;
-  
-  
 }
 .second-part  #button {
   margin-top: 20px;
@@ -224,10 +229,7 @@ aside .wrapper .second-part{
   background-color: #2a423a;
   text-transform: uppercase;
   color:#e2e3ed;
-  
 }
-
-  
 .features{
   display: flex;
   justify-content: center;
@@ -264,6 +266,9 @@ aside .wrapper .second-part{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+.reviews .wrapper .review-wrapper img{
+  width:100%;
 }
 .reviews .wrapper .review{
   display: flex;
@@ -415,27 +420,41 @@ footer .wrapper .social ul li{
    ========================================================================== */
 
    @media only screen and (min-width:768px) {
-    .wrapper{max-width: 640px;} 
     
     header .wrapper{
-      width:100%;
+      
+      display:flex; 
       justify-content: space-between;
+      margin-bottom: 20px ;
+      
     }
+    #logo{justify-content: left;width: 50%;margin-bottom: 0px;}
+    
+      
     #divider{
       display: none;
     }
+    
      header .wrapper nav{ 
       width:50%;
       justify-content: right;      
+     
     }
+    header .wrapper nav ul{
+      justify-content: space-between;
+      width:35%;
+    }
+    .hero h1{font-size: 46px;width:80%;}
+    .hero{min-height:500px;}
     aside .wrapper{
+      justify-content: space-between;
+    }
+    header .wrapper nav ul{
       justify-content: space-between;
     }
     aside .wrapper .first-part{width:40%;}
     aside .wrapper .second-part{width:40%}
-    header .wrapper nav ul{
-      justify-content: space-between;
-    }
+    
     
     
     
@@ -473,13 +492,8 @@ footer .wrapper .social ul li{
     }
     
   }
-  @media only screen and (min-width: 1200px) {
-    .wrapper{max-width: 1000px;} 
+  @media only screen and (min-width: 1200px) {  
     
-    header .wrapper{
-      width:100%;
-      justify-content: space-between;
-    }
     #divider{
       display: none;
     }

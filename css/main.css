@@ -522,7 +522,9 @@ footer .wrapper .social ul li{
     footer .wrapper{
       justify-content: space-around;
     }
-    
+    .map figure {
+      padding-bottom: 45.5%;
+    }
   }
   @media only screen and (min-width: 1200px) {  
     
@@ -573,7 +575,9 @@ footer .wrapper .social ul li{
     footer .wrapper{
       justify-content: space-around;
     }
-          
+    .map figure {
+      padding-bottom: 35%;
+    }  
   }
 
 @media print,

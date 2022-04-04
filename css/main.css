@@ -386,9 +386,15 @@ footer .wrapper .social ul li i{
 }
 .mission .wrapper{
   display: flex;
-  justify-content: center;
+  justify-content:space-between;
   align-items: center;
   flex-flow:row wrap;
+}
+.mission h1{
+  width:100%
+}
+.mission p{
+  width: 40%;
 }
 
 .map figure {
